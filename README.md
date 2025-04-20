@@ -23,7 +23,7 @@ O objetivo é demonstrar como construir um sistema básico de gerenciamento de d
    git clone https://github.com/maliarte/atividade-git-marilia-santos.git
    cd projeto_marilia_crud
 
-   --- MENU CRUD ---
+--- MENU CRUD ---
 1. Criar
 2. Ler
 3. Atualizar
@@ -35,4 +35,5 @@ ID: 101
 Nome: João Silva
 Email: joao@email.com
 Usuário criado com sucesso.
+
 
