@@ -1,8 +1,34 @@
+# crud.py
 
-# Simulando um "banco de dados" com dicionário
+# ----------------------------------------
+# O que é um BRANCH?
+# ----------------------------------------
+# Um *branch* é uma ramificação do código principal onde podemos desenvolver novas
+# funcionalidades sem afetar diretamente o que já está funcionando.
+# Por exemplo, ao criar um branch chamado 'feature-novo-projeto', você pode desenvolver
+# uma nova função ou módulo, testá-la, e somente depois integrar ao projeto principal
+# (geralmente chamado de 'main' ou 'master').
+# Isso evita conflitos e permite um desenvolvimento mais organizado e colaborativo.
+
+# Neste exemplo, foi criado um novo branch chamado: 'feature-novo-projeto'
+# E neste branch foi adicionada uma nova funcionalidade: a função `projeto()` abaixo
+
+# Nova funcionalidade adicionada no branch 'feature-novo-projeto'
+def projeto(nome, idade=None):
+    if idade:
+        return f"Olá, {nome}! Você tem {idade} anos."
+    return f"Olá, {nome}!"
+
+# Exemplo de uso:
+# print(projeto("Maria", 30))
+# print(projeto("Carlos"))
+
+# ----------------------------------------
+# Código original do CRUD
+# ----------------------------------------
+
 banco_dados = {}
 
-# Função para criar um novo registro
 def criar(id, nome, email):
     if id in banco_dados:
         print("ID já existe. Use outro ID.")
@@ -10,14 +36,12 @@ def criar(id, nome, email):
         banco_dados[id] = {"nome": nome, "email": email}
         print("Usuário criado com sucesso.")
 
-# Função para ler um registro
 def ler(id):
     if id in banco_dados:
         print(f"ID: {id} -> Nome: {banco_dados[id]['nome']}, Email: {banco_dados[id]['email']}")
     else:
         print("Usuário não encontrado.")
 
-# Função para atualizar um registro
 def atualizar(id, nome=None, email=None):
     if id in banco_dados:
         if nome:
@@ -28,7 +52,6 @@ def atualizar(id, nome=None, email=None):
     else:
         print("Usuário não encontrado.")
 
-# Função para deletar um registro
 def deletar(id):
     if id in banco_dados:
         del banco_dados[id]
@@ -36,7 +59,6 @@ def deletar(id):
     else:
         print("Usuário não encontrado.")
 
-# Menu simples para interagir com o CRUD
 def menu():
     while True:
         print("\n--- MENU CRUD ---")
