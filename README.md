@@ -1,8 +1,20 @@
-# 🐍 CRUD em Python
+# 🐍 CRUDPy
 
 Este é um projeto simples de CRUD (Create, Read, Update, Delete) feito em Python, utilizando um dicionário como estrutura de armazenamento em memória.
 
 O objetivo é demonstrar como construir um sistema básico de gerenciamento de dados via terminal, ideal para iniciantes praticarem lógica de programação e estrutura de dados.
+
+Foram realizadas as seguintes implementações:
+
+Criação de Repositório;
+Clone;
+Criação de projeto simples usando CRUD;
+Realização de Commit;
+geração de branch;
+Modificção de código com nova funcionalidade;
+Merge entre branch principal e a nova funcionalidade.
+Resolução de conflitos;
+
 
 ---
 
